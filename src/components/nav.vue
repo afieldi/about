@@ -38,7 +38,6 @@ module.exports = {
 @media (min-width: 768px) {
     .navbar {
         position: sticky;
-        width: 100vw;
     }
 
     .navbar .navbar-nav {

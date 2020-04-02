@@ -6,12 +6,28 @@
       <hr style="background-color: white" />
       <p class="welcome-subtitle">My Website</p>
     </div>
+    <div class="bottom-nav-bar" v-on:click="scroll()">
+      <i class="fas fa-sort-down down-icon mx-auto"></i>
+    </div>
   </div>
 </template>
 
 <script>
 module.exports = {
-  props: ["personName"]
+  props: ["personName"],
+  data: function() {
+    return {
+      test: "hello"
+    }
+  },
+  methods: {
+    scroll: function  ( ) {
+      console.log("Helo")
+        $('html,body').animate({
+            scrollTop: $("#profile").offset().top},
+            'slow');
+    }
+  }
 };
 </script>
 
@@ -38,7 +54,6 @@ module.exports = {
 
 .background {
   height: 100vh;
-  width: 100vw;
   background-image: url("../assets/296806.jpg");
   filter: blur(0px) grayscale(0.8);
 }
@@ -49,6 +64,26 @@ module.exports = {
   position: absolute;
   opacity: 0.7;
   background-color: rgb(0, 105, 0);
+}
+
+.bottom-nav-bar {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #343a40;
+  font-size: 2em;
+}
+
+.bottom-nav-bar:hover {
+  cursor: pointer;
+}
+
+.bottom-nav-bar .down-icon {
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 </style>
