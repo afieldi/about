@@ -1,24 +1,28 @@
 <template>
   <div id="app">
-    <navbar v-bind:style="navStyle" />
     <!-- <h1>My Vue App</h1> -->
     <greeter />
+    <navbar v-bind:style="navStyle" />
+    <bio />
   </div>
 </template>
 
 <script>
 import Greeter from './components/welcome.vue'
 import Navbar from './components/nav.vue'
+import Bio from './components/bio.vue'
 export default {
   name: 'zap',
   components: {
     Greeter,
     Navbar,
+    Bio
   },
   data: function() {
     return {
       navStyle: {
-        display: "none"
+        display: "block",
+        // top: '100vh'
       }
     }
   }
