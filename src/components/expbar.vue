@@ -27,12 +27,16 @@ module.exports = {
   width: 100%;
   height: 15px;
   background-color: #19241e;
-  position: absolute;
+  position: relative;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .exp {
   height: 100%;
   background-color: #a3de73;
+  /* background-color: rgb(61, 218, 95); */
 }
 
 .exp-cover {

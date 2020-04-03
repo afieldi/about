@@ -6,13 +6,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Profile</a>
+                    <a class="nav-link" v-on:click="scrollTo('profile')">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
+                    <a class="nav-link" v-on:click="scrollTo('')">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" v-on:click="scrollTo('skills')">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>
@@ -29,12 +29,22 @@
 </template>
 
 <script>
-module.exports = {
-    props: ["current"]
+export default {
+    props: ["current"],
+    methods: {
+        scrollTo: function ( sectionId ) {
+            $('html,body').animate({
+            scrollTop: $(`#${sectionId}`).offset().top},
+            'slow');
+        }
+    }
 }
 </script>
 
 <style>
+.nav-link:hover {
+    cursor: pointer;
+}
 @media (min-width: 768px) {
     .navbar {
         position: sticky;

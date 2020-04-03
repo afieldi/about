@@ -1,0 +1,113 @@
+{
+  "languages": {
+    "displayName": "Programming Languages",
+    "description": "",
+    "data": [
+      {
+        "displayName": "Python",
+        "value": 90
+      },
+      {
+        "displayName": "NodeJS",
+        "value": 80
+      },
+      {
+        "displayName": "TypeScript",
+        "value": 70
+      },
+      {
+        "displayName": "Java",
+        "value": 60
+      },
+      {
+        "displayName": "C",
+        "value": 67
+      },
+      {
+        "displayName": "Kotlin",
+        "value": 60
+      }
+    ]
+  },
+  "libraries": {
+    "displayName": "Libraries and Frameworks",
+    "description": "Some libraries/frameworks that are commonly used",
+    "data": [
+      {
+        "displayName": "AngularJs",
+        "value": 60
+      },
+      {
+        "displayName": "VueJs",
+        "value": 80
+      },
+      {
+        "displayName": "PyTest",
+        "value": 70
+      },
+      {
+        "displayName": "Flask",
+        "value": 70
+      }
+    ]
+  },
+  "cloud": {
+    "displayName": "Cloud Development Tools",
+    "data": [
+      {
+        "displayName": "Docker",
+        "value": 70
+      },
+      {
+        "displayName": "AWS",
+        "value": 70
+      }
+    ]
+  },
+  "database": {
+    "displayName": "Databases",
+    "data": [
+      {
+        "displayName": "SQLite",
+        "value": 87
+      },
+      {
+        "displayName": "POSTgres",
+        "value": 74
+      },
+      {
+        "displayName": "ORM database libraries",
+        "value": 82
+      },
+      {
+        "displayName": "MySQL/Oracle",
+        "value": 78
+      }
+    ]
+  },
+  "soft": {
+    "displayName": "Concepts and Management",
+    "data": [
+      {
+        "displayName": "Git",
+        "value": 90    
+      },
+      {
+        "displayName": "Continuous Integration/Deployment",
+        "value": 75
+      },
+      {
+        "displayName": "RESTful APIs",
+        "value": 83
+      },
+      {
+        "displayName": "Linux Development",
+        "value": 80
+      },
+      {
+        "displayName": "LEAN Development",
+        "value": 78
+      }
+    ]
+  }
+}

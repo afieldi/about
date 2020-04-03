@@ -3,9 +3,9 @@
     <!-- <h1>My Vue App</h1> -->
     <greeter />
     <navbar v-bind:style="navStyle" />
-    <br><br><br>
     <bio />
-    <exp-bar value="90" />
+    <skills />
+    <!-- <exp-bar value="90" /> -->
   </div>
 </template>
 
@@ -14,13 +14,16 @@ import Greeter from './components/welcome.vue'
 import Navbar from './components/nav.vue'
 import Bio from './components/bio.vue'
 import ExpBar from './components/expbar.vue'
+import Skills from './components/skills.vue'
+
 export default {
   name: 'zap',
   components: {
     Greeter,
     Navbar,
     Bio,
-    ExpBar
+    ExpBar,
+    Skills
   },
   data: function() {
     return {
