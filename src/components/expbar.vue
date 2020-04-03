@@ -36,6 +36,7 @@ module.exports = {
 .exp {
   height: 100%;
   background-color: #a3de73;
+  background-color: #d20a0a;
   /* background-color: rgb(61, 218, 95); */
 }
 

@@ -5,19 +5,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li v-bind:class="['nav-item', current=='profile'?'active':'']">
                     <a class="nav-link" v-on:click="scrollTo('profile')">Profile</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" v-on:click="scrollTo('')">Experience</a>
+                <li v-bind:class="['nav-item', current=='experience'?'active':'']">
+                    <a class="nav-link" v-on:click="scrollTo('experience')">Experience</a>
                 </li>
-                <li class="nav-item">
+                <li v-bind:class="['nav-item', current=='skills'?'active':'']">
                     <a class="nav-link" v-on:click="scrollTo('skills')">Skills</a>
                 </li>
-                <li class="nav-item">
+                <li v-bind:class="['nav-item', current=='projects'?'active':'']">
                     <a class="nav-link" href="#">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li v-bind:class="['nav-item', current=='contact'?'active':'']">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
@@ -33,9 +33,13 @@ export default {
     props: ["current"],
     methods: {
         scrollTo: function ( sectionId ) {
-            $('html,body').animate({
-            scrollTop: $(`#${sectionId}`).offset().top},
-            'slow');
+            try {
+                $('html,body').animate({
+                scrollTop: $(`#${sectionId}`).offset().top},
+                'slow');
+            } catch (error) {
+                
+            }
         }
     }
 }

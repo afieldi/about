@@ -22,7 +22,6 @@ module.exports = {
   },
   methods: {
     scroll: function  ( ) {
-      console.log("Helo")
         $('html,body').animate({
             scrollTop: $("#profile").offset().top},
             'slow');
@@ -63,7 +62,7 @@ module.exports = {
   width: 100%;
   position: absolute;
   opacity: 0.7;
-  background-color: rgb(0, 105, 0);
+  background-color: rgb(140, 5, 5);
 }
 
 .bottom-nav-bar {

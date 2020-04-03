@@ -1,0 +1,106 @@
+{
+  "work": [
+    {
+      "displayName": "Canadian Department of Defense",
+      "startDate": "May 2019",
+      "endDate": "Present",
+      "role": "Software Engineer Intern",
+      "bullets": [
+        "CSE is Canada’s premier cyber defense agency whose mission is, “To provide and protect information of national interest through leading-edge technology, in synergy with our partners.”",
+        "Developed integration for an online web portal so that users could create and configure a corporate application through RESTful APIs",
+        "Improved and updated Python code-builder which modifies and configures compiled C code",
+        "Spearheaded effort to create Splunk dashboards to deliver near real-time analytics and awareness for application developers and stakeholders",
+        "Maintained software application after release to production including troubleshooting issues and providing guidance to users as needed",
+        "Collaborated with other teams to develop cross-team product features",
+        "Used Python and ReactJS to help develop and maintain a web based testing framework",
+        "Helped implement and improve Linux compatibility with the established testing framework",
+        "Developed using a Postgres database and VSphere Virtual Machines to allow users to run tests involving multiple machines",
+        "Used LEAN development practices to ensure client satisfaction and eliminate non-essential features",
+        "Developed unit tests in C and Python"
+      ],
+      "longDescription": "",
+      "skills": [
+        "Python", "VueJs", "C", "Linux", "RESTful APIs", "Splunk", "LEAN Development", "CI/CD"
+      ]
+    },
+    {
+      "displayName": "MDA, Brampton",
+      "startDate": "May",
+      "endDate": "August 2019, 2020",
+      "role": "Software Intern",
+      "bullets": [
+        "MDA is a robotics and automation company, historically specializing in aerospace but now is branching out into other fields such as medical robotics",
+        "Created Intellectual Property Disclosure Document using scripting to automate sorting and classification of documents",
+        "Created a web portal for an internal simulator. Has a queue system, data storage, user management  system. Created using a Python Flask backend along with MySQL for database management",
+        "Worked on migrating an internal simulator from a local cluster to AWS EC2 Cloud Instances",
+        "Learned about engineering workflow, team dynamics and real life application of the design process",
+        "Maintained an employee management tool using .Net and SQL technologies"
+      ],
+      "longDescription": "",
+      "skills": [
+        "C#", "AWS", "Python", "HTML/CSS", "Javascript"
+      ]
+    }
+  ],
+  "other": [
+    {
+      "displayName": "Riot Games Hackathon",
+      "startDate": "2018",
+      "endDate": "",
+      "bullets": [
+        "My team created a match making application that would attempt to match up to 5 players together based on a set of provided criteria",
+        "Learned about software architecture from experienced software engineers",
+        "Developed a queue system that created heuristic scores for possible matches and tried to repeatedly match players so they begin to know each other",
+        "Presented technical concepts in front of a panel of judges"
+      ],
+      "longDescription": "",
+      "skills": [
+        "TypeScript", "VueJs", "Electron", "PostgreSQL"
+      ]
+    },
+    {
+      "displayName": "Riot Games API Challenge",
+      "startDate": "2017, 2018",
+      "endDate": "",
+      "bullets": [
+        "A 3-week challenge to create a website/application that utilizes the Riot Games API in a way that achieves the goal given by Riot for the challenge",
+        "Won runner-up in 2017 and first place in 2019",
+        "This was the first time I worked on a website from start to completion with a partner which helped teach me much about working in teams, work delegation and writing integratable code"
+      ],
+      "longDescription": "",
+      "skills": [
+        "Python", "Flask", "Database Management", "MySQL", "HTML/CSS", "TypeScript", "NodeJs"
+      ]
+    },
+    {
+      "displayName": "Hackathons",
+      "startDate": "2017, 2018",
+      "endDate": "",
+      "bullets": [
+        "Western Hackathon (2017), Delta Hacks (2017), Hack the 6ix (2018)",
+        "Severe time limitation which helped me develop skills such as communicating with team members under pressure and task prioritization"
+      ],
+      "skills": [
+        "Time Management", "Teamwork", "Delegation", "Problem Resolution"
+      ]
+    }
+  ],
+  "school": [
+    {
+      "displayName": "University of Western Ontario",
+      "startDate": "September 2016",
+      "endDate": "April 2021(Expected)",
+      "role": "",
+      "bullets": [
+        "3rd Year Software Engineering student"
+      ],
+      "longDescription": "",
+      "skills": [
+        "C++", "Independent work", "Vagrant", "Time Management"
+      ]
+    }
+  ],
+  "projects": [
+
+  ]
+}

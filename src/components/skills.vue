@@ -1,21 +1,21 @@
 <template>
-<div id="skills" class="exp-background">
+<div id="skills" class="skills-background">
   <br><br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
-        <exp-section section="languages"/>
+        <skill-section section="languages"/>
         <hr>
       </div>
       <div class="col-sm">
-        <exp-section section="libraries" />
+        <skill-section section="libraries" />
         <hr>
-        <exp-section section="database" />
+        <skill-section section="database" />
       </div>
       <div class="col-sm">
-        <exp-section section="cloud" />
+        <skill-section section="cloud" />
         <hr>
-        <exp-section section="soft" />
+        <skill-section section="soft" />
       </div>
     </div>
   </div>
@@ -24,18 +24,18 @@
 </template>
 
 <script>
-import expSection from './expsection.vue'
+import SkillSection from './skillsection.vue'
 export default {
   components: {
-    expSection
+    SkillSection
   }
 }
 </script>
 
 <style scoped>
-.exp-background {
-  height: 100vh;
-  background-color: #f2f2f2;
+.skills-background {
+  /* height: 100vh;
+  background-color: #f2f2f2; */
 }
 hr {
   background-color: black;
