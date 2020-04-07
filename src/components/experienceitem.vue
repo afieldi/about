@@ -9,7 +9,7 @@
       <ul>
         <li v-for="bp in expObj.bullets" :key="bp">{{bp}}</li>
       </ul>
-      <hr style="background-color: grey;">
+      <!-- <hr style="background-color: grey;"> -->
 
     </div>
     <div v-if="flip" class="col-sm-3">

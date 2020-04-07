@@ -6,6 +6,7 @@
     <bio />
     <experience />
     <skills />
+    <projects />
     <!-- <exp-bar value="90" /> -->
   </div>
 </template>
@@ -16,6 +17,7 @@ import Navbar from './components/nav.vue'
 import Bio from './components/bio.vue'
 import Experience from './components/experience.vue'
 import Skills from './components/skills.vue'
+import Projects from './components/projects.vue'
 
 export default {
   name: 'zap',
@@ -24,7 +26,8 @@ export default {
     Navbar,
     Bio,
     Skills,
-    Experience
+    Experience,
+    Projects
   },
   data: function() {
     return {

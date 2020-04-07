@@ -53,7 +53,7 @@ module.exports = {
 
 .background {
   height: 100vh;
-  background-image: url("../assets/296806.jpg");
+  background-image: url("../assets/images/296806.jpg");
   filter: blur(0px) grayscale(0.8);
 }
 

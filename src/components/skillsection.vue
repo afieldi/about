@@ -10,7 +10,7 @@
 
 <script>
 import expBar from './expbar.vue'
-import skillsJson from '../assets/skills.json'
+import skillsJson from '../assets/json/skills.json'
 
 export default {
   props: [

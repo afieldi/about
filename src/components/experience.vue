@@ -9,7 +9,7 @@
 
 <script>
 import ExpItem from './experienceitem'
-import ExpJson from '../assets/experience.json'
+import ExpJson from '../assets/json/experience.json'
 export default {
   components: {
     ExpItem
