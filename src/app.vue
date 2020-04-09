@@ -2,8 +2,8 @@
   <div id="app">
     <!-- <h1>My Vue App</h1> -->
     <greeter />
-    <navbar v-bind:style="navStyle" v-bind:current="'profile'"/>
-    <bio />
+    <navbar v-bind:style="navStyle" v-bind:current="'profile'" @openresume="openResume"/>
+    <bio @openresume="openResume"/>
     <experience />
     <skills />
     <projects />
@@ -40,16 +40,8 @@ export default {
     window.addEventListener('scroll', this.navCheck);
   },
   methods: {
-    navCheck: function ( event ) {
-      // switch (window.pageYOffset) {
-      //   case value:
-          
-      //     break;
-      
-      //   default:
-      //     break;
-      // }
-      // console.log ( window.pageYOffset)
+    openResume ( ) {
+      window.open('https://docs.google.com/document/d/1G8KbbnLW2bxeSr4dgKRv1XnjGX-P8OYZzHf8gV7bKGI/edit?usp=sharing', '_blank');
     }
   }
 }

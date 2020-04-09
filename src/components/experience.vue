@@ -1,7 +1,11 @@
 <template>
   <div class="exp-background" id="experience">
-    <br><br><br>
+    <br>
     <div class="container">
+      <h1 class="text-center">
+        Experience
+      </h1>
+      <hr>
       <exp-item v-for="expj in expJson['work']" :key="expj.displayName" v-bind:expObj="expj"/>
     </div>
   </div>

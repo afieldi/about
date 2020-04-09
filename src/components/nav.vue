@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top" v-bind:style="{top: topOffset + 'px'}">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,13 +15,13 @@
                     <a class="nav-link" v-on:click="scrollTo('skills')">Skills</a>
                 </li>
                 <li v-bind:class="['nav-item', current=='projects'?'active':'']">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" v-on:click="scrollTo('projects')">Projects</a>
                 </li>
-                <li v-bind:class="['nav-item', current=='contact'?'active':'']">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                <!-- <li v-bind:class="['nav-item', current=='contact'?'active':'']">
+                    <a class="nav-link" v-on:click="scrollTo('contact')">Contact</a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
+                    <a class="nav-link" v-on:click="$emit('openresume')">Resume</a>
                 </li>
             </ul>
         </div>
@@ -31,6 +31,22 @@
 <script>
 export default {
     props: ["current"],
+    data: function ( ) { 
+        return { 
+            topOffset: 0,
+            lastY: -1,
+            maxOffset: 0,
+        }
+    },
+    created: function ( ) {
+        window.addEventListener ( 'scroll', this.scrollNav );
+    },
+    destroyed: function ( ) {
+        window.removeEventListener ( 'scroll', this.scrollNav );
+    },
+    mounted: function ( ) {
+        this.maxOffset = document.getElementById('main-nav').offsetHeight * -1;
+    },
     methods: {
         scrollTo: function ( sectionId ) {
             try {
@@ -40,6 +56,28 @@ export default {
             } catch (error) {
                 
             }
+        },
+        scrollNav: function ( event ) {
+            var curY = window.scrollY;
+            if ( this.lastY < 0 ) {
+                this.lastY = curY;
+            }
+            var delta = this.lastY - curY;
+            if ( delta < 0 ) {
+                if ( this.topOffset > this.maxOffset ) {
+                    this.topOffset += delta * .15
+                }
+            }
+            else if ( delta > 0 ) {
+                if ( this.topOffset < 0 ) {
+                    this.topOffset += delta
+                }
+                else if ( this.topOffset > 0) {
+                    this.topOffset = 0
+                }
+            }
+
+            this.lastY = curY;
         }
     }
 }

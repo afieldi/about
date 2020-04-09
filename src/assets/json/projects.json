@@ -1,5 +1,95 @@
 {
-  "data": [
-    
+  "projects": [
+    {
+      "displayName": "Science Bot",
+      "link": "https://github.com/afieldi/Science-Bot-Hack-Western",
+      "image": "scibot.jpg",
+      "startDate": "Feb 2019",
+      "endDate": "",
+      "shortDescription": "This project was created for the 2019 Western Hackathon. It is a Discord chat bot that integrates with Reddit and IBM Watson to bring answers to natural language questions.",
+      "longDescription": "",
+      "skills": [
+        "discordpy",
+        "python",
+        "API Programming"
+      ],
+      "theme": "dark"
+    },
+    {
+      "displayName": "Mission Tracker",
+      "link": "https://github.com/afieldi/2018-Riot-API-Challenge",
+      "image": "mission.jpg",
+      "startDate": "Dec 2018",
+      "endDate": "",
+      "shortDescription": "Created for the 2018 Riot Game's API Challenge. It follows a players in game progress and tracks their completion of dynamically generated missions as well as supplies player vs player data tracking. Placed 1st in the competition.",
+      "longDescription": "",
+      "skills": [
+        "MySQL",
+        "NodeJs",
+        "Angular",
+        "TypeScript"
+      ],
+      "theme": "dark"
+    },
+    {
+      "displayName": "Online Resume",
+      "link": "https://github.com/afieldi/vue-site",
+      "image": "296806.jpg",
+      "startDate": "Apr 2020",
+      "endDate": "",
+      "shortDescription": "Created to practice using the VueJs framework as well as give something to put on applications when they ask for websites.",
+      "longDescription": "",
+      "skills": [
+        "VueJs",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "theme": "dark"
+    },
+    {
+      "displayName": "Runic Insights",
+      "link": "https://github.com/afieldi/lol-API-2017",
+      "image": "scibot.jpg",
+      "startDate": "Dec 2017",
+      "endDate": "",
+      "shortDescription": "Collected previous game data from top level players and analyzed it to determine generally best strategies. This was used to advise newer players on best practices. Created for 2017 Riot Games' API challenge and won 2nd place.",
+      "longDescription": "",
+      "skills": [
+        "NodeJs",
+        "MySQL",
+        "HTML",
+        "CSS"
+      ],
+      "theme": "dark"
+    },
+    {
+      "displayName": "Online Resturant",
+      "link": "https://github.com/afieldi/Angular-Ramen-Shop",
+      "image": "ramrest.png",
+      "startDate": "Jan 2019",
+      "endDate": "",
+      "shortDescription": "Created for a school project to make an online shopping portal. Contains shopping cart, user management, wishlists, etc.",
+      "longDescription": "",
+      "skills": [
+        "Angular",
+        "HTML/CSS",
+        "TypeScript"
+      ],
+      "theme": "light"
+    },
+    {
+      "displayName": "Science Bot2",
+      "link": "https://github.com/afieldi/Science-Bot-Hack-Western",
+      "image": "scibot.jpg",
+      "startDate": "Feb 2019",
+      "endDate": "",
+      "shortDescription": "",
+      "longDescription": "",
+      "skills": [
+
+      ],
+      "theme": "dark"
+    }
   ]
 }

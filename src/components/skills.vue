@@ -1,7 +1,11 @@
 <template>
 <div id="skills" class="skills-background">
-  <br><br>
+  <br>
   <div class="container">
+    <h1 class="text-center">
+      Skills
+    </h1>
+    <hr>
     <div class="row">
       <div class="col-sm">
         <skill-section section="languages"/>
@@ -19,6 +23,7 @@
       </div>
     </div>
   </div>
+  <br><br>
   <!-- <div v-for="i in skills['languages']" :key="i">{{i}}</div> -->
 </div>    
 </template>

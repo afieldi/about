@@ -1,6 +1,10 @@
 <template>
   <div id="profile" class="container small-container">
-    <br><br><br>
+    <br>
+    <h1 class="text-center">
+      About
+    </h1>
+    <hr>
     <div class="row">
       <div class="col-sm">
         <img src="../assets/images/nebi-profile.jpg" alt="" class="rounded-circle nebi-pic">
@@ -10,13 +14,13 @@
           promptly lie down after two minutes deciding that play time is over. 
         </p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4" style="text-align: center;">
         <div>
           <b>Location</b>
           <p>Mississauga, Ontario <br> Canada</p>
           <b>Email</b>
           <p>arek.fielding@gmail.com</p>
-          <button type="button" class="full-button btn btn-dark" v-on:click="openResume">View Resume</button>
+          <button type="button" class="full-button btn btn-dark" v-on:click="$emit('openresume')">View Resume</button>
         </div>
       </div>
     </div>
@@ -31,7 +35,9 @@ module.exports = {
   ],
   methods: {
     openResume: function ( ) {
-      window.open('https://docs.google.com/document/d/1G8KbbnLW2bxeSr4dgKRv1XnjGX-P8OYZzHf8gV7bKGI/edit?usp=sharing', '_blank');
+      console.log ( this.$root )
+      this.$root.openResume ( )
+      // window.open('https://docs.google.com/document/d/1G8KbbnLW2bxeSr4dgKRv1XnjGX-P8OYZzHf8gV7bKGI/edit?usp=sharing', '_blank');
     }
   },
 }
@@ -42,7 +48,7 @@ module.exports = {
 @media (min-width: 600px) {
   .full-button {
     width: 80%;
-    left: 10%;
+    /* left: 10%; */
     height: 3em;
     position: relative;
   }
