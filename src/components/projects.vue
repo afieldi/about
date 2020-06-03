@@ -6,20 +6,27 @@
         Projects
       </h1>
       <hr>
-      <div class="card-columns">
-        <div v-for="proj in projJson" :key="proj.displayName" class="card bg-dark text-white" v-on:click="toggleSlide(proj.displayName)">
-          <img class="card-img"
-               v-bind:src="require('@/assets/images/' + proj.image)"
-               alt="Card image"
-               >
-          <div class="card-img-overlay">
-            <h3 class="card-title" v-bind:class="getColorClasses(proj.theme)">{{proj.displayName}}</h3>
-          </div>
-          <div v-bind:id="proj.displayName + '-desc'" class="card-desc card-hidden bg-secondary text-light">
-            <div class="container">
-              <a v-bind:href="proj.link" class="text-light"><i>View Project</i></a>
-              <!-- <hr> -->
-              <p>{{proj.shortDescription}}</p>
+      <div class="row">
+        <div class="col" v-for="(projCol, index) in projArr" :key="index">
+          <div v-for="proj in projCol" :key="proj.displayName" class="card bg-dark text-white proj-card" v-on:click="toggleSlide(proj.displayName)">
+            <img class="card-img"
+                v-bind:src="require('@/assets/images/' + proj.image)"
+                alt="Card image"
+                >
+            <div class="card-img-overlay">
+              <h3 class="card-title" v-bind:class="getColorClasses(proj.theme)">{{proj.displayName}}</h3>
+            </div>
+            <div v-bind:id="proj.displayName + '-desc'" v-bind:class="[proj.theme === 'dark' ? 'card-dark' : 'card-light']" class="card-desc card-hidden" >
+              <div class="container">
+                <a v-bind:href="proj.link" class="text-primary"><i>View Project</i></a>
+                <!-- <hr> -->
+                <p>{{proj.shortDescription}}</p>
+                <hr>
+                <div>
+                  <bubble v-for="skillItem in proj.skills" :key="skillItem" :skill="skillItem"></bubble>
+                </div>
+                <br>
+              </div>
             </div>
           </div>
         </div>
@@ -30,12 +37,39 @@
 
 <script>
 import projJson from '../assets/json/projects.json'
+import bubble from './skillbubble'
+
+let projArr = [];
 
 export default {
   data: function ( ) {
     return {
-      projJson: projJson["projects"]
+      projJson: projJson["projects"],
+      projArr: projArr
     }
+  },
+  components: {
+    bubble
+  },
+  created: function ( ) { 
+    let cols = 0;
+    console.log(window.innerWidth);
+    if (window.innerWidth > 1200) {
+      cols = 3;
+    }
+    else if (window.innerWidth > 700) {
+      cols = 2;
+    }
+    else {
+      cols = 1;
+    }
+
+    let perCol = Number(projJson["projects"].length / cols);
+    // console.log(perCol)
+    for (var i = 0; i < cols; i ++) {
+      projArr.push(projJson["projects"].slice(i * perCol, (i * perCol) + perCol));
+    }
+
   },
   methods: {
     toggleSlide: function ( projName ) {
@@ -60,6 +94,10 @@ export default {
 
 <style scoped>
 
+.proj-card {
+  margin-bottom: 15px;
+}
+
 .card-img { 
   transition: 0.4s;
 }
@@ -74,11 +112,21 @@ export default {
 
 .card-desc { 
   /* background-color: rgb(236, 208, 208); */
-  color: black;
   transition: 0.5s;
   max-height: 30em;
   overflow: hidden;
   position: relative;
+
+}
+
+.card-dark {
+  background-color: rgb(36, 36, 36);
+  color: #f2f2f2;
+}
+
+.card-light {
+  background-color: rgb(219, 214, 214);
+  color: black;
 }
 
 .card-hidden { 

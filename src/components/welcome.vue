@@ -61,7 +61,7 @@ module.exports = {
   height: 100%;
   width: 100%;
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.25;
   background-color: rgb(140, 5, 5);
 }
 

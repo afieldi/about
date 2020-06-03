@@ -17,6 +17,7 @@
       <a><b>{{expObj.role}}</b></a>
       <p><i>{{expObj.startDate}} - {{expObj.endDate}}</i></p>
     </div>
+  
   </div>
   
 </template>

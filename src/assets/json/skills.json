@@ -13,11 +13,11 @@
       },
       {
         "displayName": "TypeScript",
-        "value": 70
+        "value": 80
       },
       {
         "displayName": "Java",
-        "value": 60
+        "value": 75
       },
       {
         "displayName": "C",
@@ -34,7 +34,7 @@
     "description": "Some libraries/frameworks that are commonly used",
     "data": [
       {
-        "displayName": "AngularJs",
+        "displayName": "Angular",
         "value": 60
       },
       {
@@ -76,7 +76,7 @@
         "value": 74
       },
       {
-        "displayName": "ORM database libraries",
+        "displayName": "ORM DBs",
         "value": 82
       },
       {
@@ -93,19 +93,19 @@
         "value": 90    
       },
       {
-        "displayName": "Continuous Integration/Deployment",
+        "displayName": "CI/CD",
         "value": 75
       },
       {
-        "displayName": "RESTful APIs",
+        "displayName": "REST APIs",
         "value": 83
       },
       {
-        "displayName": "Linux Development",
+        "displayName": "Linux Dev",
         "value": 80
       },
       {
-        "displayName": "LEAN Development",
+        "displayName": "LEAN Dev",
         "value": 78
       }
     ]

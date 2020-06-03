@@ -53,6 +53,7 @@ export default {
                 $('html,body').animate({
                 scrollTop: $(`#${sectionId}`).offset().top},
                 'slow');
+                this.topOffset = this.maxOffset;
             } catch (error) {
                 
             }

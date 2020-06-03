@@ -10,16 +10,14 @@
       <div class="col-sm">
         <skill-section section="languages"/>
         <hr>
-      </div>
-      <div class="col-sm">
-        <skill-section section="libraries" />
-        <hr>
-        <skill-section section="database" />
+        <skill-section section="soft" />
       </div>
       <div class="col-sm">
         <skill-section section="cloud" />
         <hr>
-        <skill-section section="soft" />
+        <skill-section section="libraries" />
+        <hr>
+        <skill-section section="database" />
       </div>
     </div>
   </div>

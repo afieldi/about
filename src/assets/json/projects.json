@@ -9,11 +9,11 @@
       "shortDescription": "This project was created for the 2019 Western Hackathon. It is a Discord chat bot that integrates with Reddit and IBM Watson to bring answers to natural language questions.",
       "longDescription": "",
       "skills": [
-        "discordpy",
-        "python",
+        "DiscordPy",
+        "Python",
         "API Programming"
       ],
-      "theme": "dark"
+      "theme": "light"
     },
     {
       "displayName": "Mission Tracker",
@@ -61,7 +61,7 @@
         "HTML",
         "CSS"
       ],
-      "theme": "dark"
+      "theme": "light"
     },
     {
       "displayName": "Online Resturant",
@@ -89,7 +89,7 @@
       "skills": [
 
       ],
-      "theme": "dark"
+      "theme": "light"
     }
   ]
 }

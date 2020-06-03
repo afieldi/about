@@ -1,9 +1,9 @@
 <template>
   <div>
     <h3>{{skillName}}</h3>
-    <div v-for="skill in skills" :key="skill.displayName">
-      <h5>{{skill.displayName}}</h5>
-      <exp-bar v-bind:value="skill.value" />
+    <div v-for="skill in skills" :key="skill.displayName" class="row skill-row">
+      <div class="col-4"><h5>{{skill.displayName}}</h5></div>
+      <div class="col-8"><exp-bar v-bind:value="skill.value" /></div>
     </div>
   </div>
 </template>
@@ -31,5 +31,10 @@ export default {
 <style scoped>
   h5 {
     margin: 0;
+    display: inline-block;
+  }
+
+  .skill-row {
+    margin-bottom: 10px;
   }
 </style>
