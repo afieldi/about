@@ -7,6 +7,7 @@
       </h1>
       <hr>
       <exp-item v-for="expj in expJson['work']" :key="expj.displayName" v-bind:expObj="expj"/>
+      <br>
     </div>
   </div>
 </template>

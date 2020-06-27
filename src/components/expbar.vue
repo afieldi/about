@@ -2,7 +2,7 @@
 <div class="holder">
   <div class="exp" v-bind:style="expStyle"></div>
   <div style="position: absolute; height: 100%; width: 100%; top: 0;">
-    <div v-for="index in 10" :key="index" class="exp-cover" :style="{left: (index-1)*10 + '%'}"></div>
+    <!-- <div v-for="index in 10" :key="index" class="exp-cover" :style="{left: (index-1)*10 + '%'}"></div> -->
   </div>
 </div>    
 </template>
@@ -25,11 +25,12 @@ module.exports = {
 <style scoped>
 .holder {
   width: 100%;
-  height: 15px;
-  background-color: #19241e;
+  height: 100%;
+  background-color: #515251;
   position: relative;
   margin-bottom: 5px;
   border-radius: 20px;
+  /* border: 1px black solid; */
   overflow: hidden;
 }
 
@@ -37,6 +38,11 @@ module.exports = {
   height: 100%;
   background-color: #a3de73;
   background-color: #d20a0a;
+  border-radius: 20px;
+  left: 2%;
+  height: 60%;
+  top: 20%;
+  position: relative;
   /* background-color: rgb(61, 218, 95); */
 }
 
