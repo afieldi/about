@@ -79,17 +79,19 @@
       "theme": "light"
     },
     {
-      "displayName": "Science Bot2",
-      "link": "https://github.com/afieldi/Science-Bot-Hack-Western",
+      "displayName": "DISC Quiz Site",
+      "link": "https://github.com/afieldi/disc-quiz",
       "image": "scibot.jpg",
       "startDate": "Feb 2019",
       "endDate": "",
       "shortDescription": "",
       "longDescription": "",
       "skills": [
-
+        "VueJs",
+        "HTML",
+        "CSS"
       ],
-      "theme": "dark"
+      "theme": "light"
     }
   ]
 }
