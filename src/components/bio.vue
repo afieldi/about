@@ -9,9 +9,10 @@
       <div class="col-sm">
         <img src="../assets/images/nebi-profile.jpg" alt="" class="rounded-circle nebi-pic">
         <p>
-          I am embarressed to write about myself so instead here is a blurb about my cat. Her name is Nebi - she likes
-          to lay around all day with the occasional spurt of exercise. She'll meow at you to get her to play with you then 
-          promptly lie down after two minutes deciding that play time is over. 
+          I am a Fullstack Software Developer experienced in both front and back end development. I have previously 
+          worked with some of the most popular backend server technologies such as Java (SpringBoot), Nodejs (Express), 
+          and Python (Django, Flask). My career has also seen me work with many of the currently popular front-end Single 
+          Page Application frameworks such as Vue.Js, Angular, and React.
         </p>
       </div>
       <div class="col-sm-4" style="text-align: center;">
