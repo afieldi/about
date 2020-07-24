@@ -55,6 +55,8 @@ module.exports = {
   height: 100vh;
   background-image: url("../assets/images/296806.jpg");
   filter: blur(0px) grayscale(0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .background-tint {
