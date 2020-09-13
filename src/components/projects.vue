@@ -6,7 +6,7 @@
         Projects
       </h1>
       <hr>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col" v-for="(projCol, index) in projArr" :key="index">
           <div v-for="proj in projCol" :key="proj.displayName" class="card bg-dark text-white proj-card" v-on:click="toggleSlide(proj.displayName)">
             <img class="card-img"
@@ -19,13 +19,46 @@
             <div v-bind:id="proj.displayName + '-desc'" v-bind:class="[proj.theme === 'dark' ? 'card-dark' : 'card-light']" class="card-desc card-hidden" >
               <div class="container">
                 <a v-bind:href="proj.link" class="text-primary"><i>View Project</i></a>
-                <!-- <hr> -->
                 <p>{{proj.shortDescription}}</p>
                 <hr v-bind:class="[proj.theme === 'dark' ? 'bg-light' : 'bg-dark']">
                 <div>
                   <bubble v-for="skillItem in proj.skills" :key="skillItem" :skill="skillItem"></bubble>
                 </div>
                 <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div v-for="(proj, index) in projJson" :key="index">
+        <p>
+          <a class="btn btn-dark project-button" data-toggle="collapse" v-bind:href="'#project-' + index" role="button" aria-expanded="false" v-bind:aria-controls="'project-' + index">
+            {{proj.displayName}}: <a class="subText">{{proj.startDate}}</a>
+          </a>
+        </p>
+        <div class="collapse" v-bind:id="'project-' + index">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" v-bind:src="require('@/assets/images/' + proj.image)" alt="Project Image">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title"></h5> -->
+                    <p class="card-text">{{proj.shortDescription}}</p>
+                    <a v-bind:href="proj.link" class="btn btn-danger go-to-button">Go to project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-title"><h2>{{proj.displayName}}</h2></div>
+                <hr>
+                <div v-html="proj.longDescription">
+                  
+                </div>
+                <hr>
+                <div>
+                  <bubble v-for="skillItem in proj.skills" :key="skillItem" :skill="skillItem"></bubble>
+                </div>
               </div>
             </div>
           </div>
@@ -65,7 +98,7 @@ export default {
     }
 
     let perCol = Number(projJson["projects"].length / cols);
-    // console.log(perCol)
+    
     for (var i = 0; i < cols; i ++) {
       projArr.push(projJson["projects"].slice(i * perCol, (i * perCol) + perCol));
     }
@@ -137,6 +170,10 @@ export default {
   background-color: #f2f2f2;
 }
 
+.card-title {
+  text-align: center;
+}
+
 .vertical-center {
   position: relative;
   /* top: 50%;
@@ -148,4 +185,20 @@ export default {
     column-count: 5;
   } 
 } */
+
+.project-button {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.go-to-button {
+  width: 100%;
+  text-align: center;
+}
+
+.subText {
+  font-style: italic;
+  font-size: 0.8em;
+}
 </style>
