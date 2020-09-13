@@ -9,8 +9,8 @@
       "shortDescription": "This project was created for the 2019 Western Hackathon. It is a Discord chat bot that integrates with Reddit and IBM Watson to bring answers to natural language questions.",
       "longDescription": "",
       "skills": [
-        "DiscordPy",
-        "Python",
+        "discordpy",
+        "python",
         "API Programming"
       ],
       "theme": "light"
@@ -61,7 +61,7 @@
         "HTML",
         "CSS"
       ],
-      "theme": "light"
+      "theme": "dark"
     },
     {
       "displayName": "Online Resturant",
@@ -82,9 +82,9 @@
       "displayName": "DISC Quiz Site",
       "link": "https://github.com/afieldi/disc-quiz",
       "image": "scibot.jpg",
-      "startDate": "Feb 2019",
+      "startDate": "Apr 2020",
       "endDate": "",
-      "shortDescription": "",
+      "shortDescription": "Allows users to take the DCISC Advantage Quiz online. Gives you a personality result hopefully telling you a bit about who you are as a worker. ",
       "longDescription": "",
       "skills": [
         "VueJs",

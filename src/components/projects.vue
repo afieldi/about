@@ -21,7 +21,7 @@
                 <a v-bind:href="proj.link" class="text-primary"><i>View Project</i></a>
                 <!-- <hr> -->
                 <p>{{proj.shortDescription}}</p>
-                <hr>
+                <hr v-bind:class="[proj.theme === 'dark' ? 'bg-light' : 'bg-dark']">
                 <div>
                   <bubble v-for="skillItem in proj.skills" :key="skillItem" :skill="skillItem"></bubble>
                 </div>
